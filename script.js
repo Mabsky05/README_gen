@@ -42,7 +42,7 @@ const promptUser = () => {
     ])
 }
 // title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-const generateMD = ({Title, Description, Tech, Installation, Usage, License, Contributing, Tests, Contact }) =>
+const generateMD = ({Title, Description, Tech, Installation, Usage, Contributing, Tests, Contact }) =>
 
 "## " + `${Title}` + "\n\n" + 
 "![Project Image](assets/sample.jpg)" + "\n" + 
@@ -52,6 +52,8 @@ const generateMD = ({Title, Description, Tech, Installation, Usage, License, Con
 "## " + "Table of Contents" + "\n" + "[Tech](#Tech)" + "\n" +
 "## " + "Tech" + "\n" + `${Tech}` + "\n\n" +
 "## " + "Installation" + "\n" + `${Installation}` + "\n\n" +
+"## " + "Usage" + "\n" + `${Usage}` + "\n\n" +
+"## " + "Contributing" + "\n" + `${Contributing}` + "\n\n" +
 "## " + "Questions / Contact" + "\n" + `${Contact}` + "\n\n" +
 "## " + "Log"
 

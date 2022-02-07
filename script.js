@@ -11,17 +11,27 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'Description',
-            message: "Short description of your project:",
+            message: "Input short project description:",
         },
         {
             type: 'input',
             name: 'Tech',
-            message: "Languages, extensions you used:",
+            message: "Input languages, extensions used:",
         },
         {
             type: 'input',
             name: 'Installation',
-            message: "How do you use your project:",
+            message: "Input installation instructions:",
+        },
+        {
+            type: 'input',
+            name: 'Usage',
+            message: "Input usage instructions:",
+        },
+        {
+            type: 'input',
+            name: 'Contributing',
+            message: "Input Contributors",
         },
         {
             type: 'input',
@@ -32,13 +42,14 @@ const promptUser = () => {
     ])
 }
 // title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-const generateMD = ({Title, Summary, Tech, Desc_Inst, Contact }) =>
+const generateMD = ({Title, Description, Tech, Installation, Usage, License, Contributing, Tests, Contact }) =>
 
 "## " + `${Title}` + "\n\n" + 
 "![Project Image](assets/sample.jpg)" + "\n" + 
-"![Project GIF](assets/sample.gif)" + "\n" + 
+"![Project GIF](assets/sample.gif)" + "\n" +
 "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)" +
-"## " + "Description" + "\n" + `${Description}` + "\n\n" +
+"## " + "Description" + "\n" + `${Description}`  + "\n\n" +
+"## " + "Table of Contents" + "\n" + "[Tech](#Tech)" + "\n" +
 "## " + "Tech" + "\n" + `${Tech}` + "\n\n" +
 "## " + "Installation" + "\n" + `${Installation}` + "\n\n" +
 "## " + "Questions / Contact" + "\n" + `${Contact}` + "\n\n" +

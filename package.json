@@ -1,0 +1,23 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "Program for generating READMEs",
+  "main": "script.js",
+  "scripts": {
+    "test": "rdm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "readme_generator"
+  },
+  "keywords": [
+    "readme",
+    "generator",
+    "node.js"
+  ],
+  "author": "Mabsky05",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}

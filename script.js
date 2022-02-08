@@ -35,7 +35,12 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            name: 'Quest_Con',
+            name: 'Tests',
+            message: "Input any tests",
+        },
+        {
+            type: 'input',
+            name: 'Contact',
             message: "Enter email / other contact info",
         },
 
@@ -49,11 +54,14 @@ const generateMD = ({Title, Description, Tech, Installation, Usage, Contributing
 "![Project GIF](assets/sample.gif)" + "\n" +
 "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)" +
 "## " + "Description" + "\n" + `${Description}`  + "\n\n" +
-"## " + "Table of Contents" + "\n" + "[Tech](#Tech)" + "\n" +
+"## " + "Table of Contents" + "\n" + "[Tech](#Tech)" + "\n\n" +
+"[Installation](#Installation)" + "\n\n" + "[Usage](#Usage)" + "\n\n" + "[Contributing](#Contributing)" + "\n\n" + 
+"[Tests](#Tests)" + "\n\n" + "[Contact](#Contact)" + "\n\n" +
 "## " + "Tech" + "\n" + `${Tech}` + "\n\n" +
 "## " + "Installation" + "\n" + `${Installation}` + "\n\n" +
 "## " + "Usage" + "\n" + `${Usage}` + "\n\n" +
 "## " + "Contributing" + "\n" + `${Contributing}` + "\n\n" +
+"## " + "Tests" + "\n" + `${Tests}` + "\n\n" +
 "## " + "Questions / Contact" + "\n" + `${Contact}` + "\n\n" +
 "## " + "Log"
 

@@ -1,4 +1,4 @@
-## l
+## README Generator
 
 ![Project Image](assets/sample.jpg)
 ![Project GIF](assets/sample.gif)
@@ -19,21 +19,22 @@ l
 [Contact](#Contact)
 
 ## Tech
-l
+Javascript
 
 ## Installation
-l
+Runs on node.js, via Visual Studio or equivalent platform. 
 
 ## Usage
-l
+Open integrated Terminal and run command 'node script'. Respond to following prompts. 
+At end of prompting, file is created in Assets folder. 
 
 ## Contributing
-l
+Miguel Afable
 
 ## Tests
-l
+None
 
 ## Questions / Contact
-l
+grimdango@gmail.com
 
 ## Log

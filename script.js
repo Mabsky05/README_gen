@@ -69,7 +69,7 @@ const generateMD = ({Title, Description, Tech, Installation, Usage, Contributing
 
 const create = () => {
     promptUser()
-    .then ((answers) => fs.writeFileSync("README.md", generateMD(answers))) 
+    .then ((answers) => fs.writeFileSync("assets/README.md", generateMD(answers))) 
     .then ()
     .catch ()
     

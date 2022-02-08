@@ -65,8 +65,6 @@ const generateMD = ({Title, Description, Tech, Installation, Usage, Contributing
 "## " + "Questions / Contact" + "\n" + `${Contact}` + "\n\n" +
 "## " + "Log"
 
-
-
 const create = () => {
     promptUser()
     .then ((answers) => fs.writeFileSync("assets/README.md", generateMD(answers))) 
